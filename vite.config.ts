@@ -1,6 +1,7 @@
 
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
+  // @ts-ignore
   import path from 'path';
 
   export default defineConfig({
@@ -51,7 +52,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
     },
     server: {
       port: 3000,
