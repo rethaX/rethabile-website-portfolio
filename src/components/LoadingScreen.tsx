@@ -85,7 +85,7 @@ export function LoadingScreen() {
             <div className="absolute inset-0 bg-purple-500 blur-2xl opacity-50" />
           </div>
           <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-            DevFlow
+            Rethabile Mokwane
           </h1>
         </motion.div>
 

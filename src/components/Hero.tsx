@@ -50,7 +50,7 @@ export function Hero() {
             >
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
-                John Developer
+                Rtehabile Mokwane
               </span>
             </motion.h1>
             
@@ -72,9 +72,8 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              Transforming ideas into powerful digital experiences. I specialize in building
-              scalable web applications and automating business processes with cutting-edge
-              technologies.
+              Transforming ideas into powerful digital experiences.
+              I specialize in building scalable web applications and automating business processes with cutting-edge technologies.
             </motion.p>
             
             <motion.div
@@ -90,8 +89,8 @@ export function Hero() {
                 Explore My Work
               </button>
               <button
-                onClick={() => window.location.href = 'mailto:your.email@example.com'}
-                className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700 hover:border-purple-500"
+                  onClick={() => window.location.href = 'mailto:rethabilemokwane55@gmail.com'}
+                  className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700 hover:border-purple-500"
               >
                 Get In Touch
               </button>
@@ -104,7 +103,7 @@ export function Hero() {
               transition={{ delay: 0.7 }}
             >
               <a
-                href="https://github.com"
+                href="https://github.com/rethaX"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-800/50 hover:bg-slate-700 rounded-lg transition-all border border-slate-700 hover:border-purple-500 text-slate-300 hover:text-white group"
@@ -112,7 +111,7 @@ export function Hero() {
                 <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rethabile-mokwane-information-technology/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-800/50 hover:bg-slate-700 rounded-lg transition-all border border-slate-700 hover:border-purple-500 text-slate-300 hover:text-white group"
@@ -120,8 +119,8 @@ export function Hero() {
                 <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="mailto:your.email@example.com"
-                className="p-3 bg-slate-800/50 hover:bg-slate-700 rounded-lg transition-all border border-slate-700 hover:border-purple-500 text-slate-300 hover:text-white group"
+                  href="mailto:rethabilemokwane55@gmail.com"
+                  className="p-3 bg-slate-800/50 hover:bg-slate-700 rounded-lg transition-all border border-slate-700 hover:border-purple-500 text-slate-300 hover:text-white group"
               >
                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>

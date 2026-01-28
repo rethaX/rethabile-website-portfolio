@@ -8,11 +8,12 @@ import { Footer } from './Footer';
 
 export function Portfolio() {
   const handleDownloadCV = () => {
-    // Create a simple CV download
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; // This would be your actual CV file
-    link.download = 'CV_Fullstack_Developer.pdf';
+    link.href = 'src/public/Rethabile-Mokwane-CV.pdf';
+    link.download = 'Rethabile-Mokwane-CV.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (

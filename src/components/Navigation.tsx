@@ -26,7 +26,7 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
               <div className="absolute inset-0 bg-purple-500 blur-xl opacity-50" />
             </div>
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              DevFlow
+              R.Mokwane
             </span>
           </div>
 
