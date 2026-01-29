@@ -9,7 +9,7 @@ import { Footer } from './Footer';
 export function Portfolio() {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = 'src/public/Rethabile-Mokwane-CV.pdf';
+    link.href = '/public/Rethabile-Mokwane-CV.pdf';
     link.download = 'Rethabile-Mokwane-CV.pdf';
     document.body.appendChild(link);
     link.click();
