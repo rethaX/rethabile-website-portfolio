@@ -6,12 +6,12 @@ const skills = [
   {
     icon: Code2,
     title: 'Frontend Development',
-    technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js'],
+    technologies: ['Javascript', 'TypeScript', 'Next.js', 'Tailwind CSS & HTML', 'Angular'],
   },
   {
     icon: Database,
     title: 'Backend Development',
-    technologies: ['Node.js', 'Java', 'Spring Boot', 'PostgreSQL', 'Jarkarta EE', 'Rest API', 'Microservices'],
+    technologies: ['Node.js', 'Java', 'Spring Boot', 'PostgresSQL', 'Jakarta EE', 'Rest API', 'Microservices'],
   },
   {
     icon: Cloud,
