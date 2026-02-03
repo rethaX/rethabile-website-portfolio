@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl mb-4">&lt;DevPortfolio/&gt;</h3>
+            <h3 className="text-white text-xl mb-4">&lt;R.Mokwane/&gt;</h3>
             <p className="text-slate-400">
               Building the future, one line of code at a time.
             </p>
@@ -42,7 +42,7 @@ export function Footer() {
             <h3 className="text-white text-lg mb-4">Connect</h3>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/rethaX"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300 hover:text-white"
@@ -50,7 +50,7 @@ export function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rethabile-mokwane-information-technology/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300 hover:text-white"
@@ -58,7 +58,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:rethabilemokwane55@gmail.com"
                 className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300 hover:text-white"
               >
                 <Mail className="w-5 h-5" />
@@ -69,7 +69,7 @@ export function Footer() {
 
         <div className="border-t border-slate-800 pt-8 text-center">
           <p className="text-slate-400 flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by John Developer
+            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by Rethabile Mokwane
             <span className="mx-2">•</span>
             {new Date().getFullYear()}
           </p>

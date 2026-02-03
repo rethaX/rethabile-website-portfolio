@@ -11,7 +11,7 @@ const skills = [
   {
     icon: Database,
     title: 'Backend Development',
-    technologies: ['Node.js', 'Python', 'Express', 'PostgreSQL', 'MongoDB'],
+    technologies: ['Node.js', 'Java', 'Spring Boot', 'PostgreSQL', 'Jarkarta EE', 'Rest API', 'Microservices'],
   },
   {
     icon: Cloud,
@@ -53,17 +53,19 @@ export function About() {
             viewport={{ once: true }}
           >
             <p className="text-slate-300 text-lg mb-4">
-              I'm a passionate fullstack developer with 5+ years of experience building web applications
-              and automating business processes. I specialize in creating scalable, user-friendly solutions
-              that solve real-world problems.
+              Power Platform Specialist | Building scalable low-code solutions that automate
+              workflows and drive efficiency. Currently, I develop and integrate enterprise
+              applications using Power Apps, Power Automate, and Power BI at Deviare.
             </p>
             <p className="text-slate-300 text-lg mb-4">
-              My expertise spans across modern web technologies and the Microsoft Power Platform ecosystem.
-              I love bridging the gap between technical implementation and business requirements.
+              I hold Microsoft certifications (PL-900, PL-200, PL-300, PL-500, PL-400 & PL-
+              600) and leverage a strong background in software engineering (Java, Python,
+              AWS) to build robust, data-driven solutions.
             </p>
             <p className="text-slate-300 text-lg">
-              When I'm not coding, you can find me contributing to open-source projects, writing technical
-              blog posts, or exploring new technologies.
+              I am passionate about using
+              technology to solve complex business problems. Open to connecting with
+              professionals in low-code development, and digital transformation.
             </p>
           </motion.div>
 
