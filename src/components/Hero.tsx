@@ -50,7 +50,7 @@ export function Hero() {
             >
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
-                Rtehabile Mokwane
+                Rethabile Mokwane
               </span>
             </motion.h1>
             
@@ -62,7 +62,7 @@ export function Hero() {
             >
               <Rocket className="w-6 h-6 text-purple-400" />
               <h2 className="text-2xl md:text-3xl text-slate-300">
-                Fullstack Developer & Power Platform Expert
+                Fullstack Developer & Power Platform Specialist
               </h2>
             </motion.div>
             

@@ -65,7 +65,7 @@ const education = [
   },
   {
     degree: "National Senior Certificate",
-    institution: "Claphma High School",
+    institution: "Clapham High School",
     location: "Pretoria, South Africa",
     period: "Jan 2015 - Dec 2019",
     status: "completed",
@@ -120,9 +120,15 @@ export function Experience() {
                         }`}
                     >
                       {/* Timeline dot */}
-                      <div className={`hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-slate-900 ${
-                          exp.status === 'current' ? 'bg-pink-500 animate-pulse' : 'bg-green-500'
-                      }`} />
+                      <div className="hidden md:flex absolute left-1/2 top-0 transform -translate-x-1/2 items-center justify-center w-5 h-5 rounded-full bg-slate-900 border-4 border-slate-900 z-20">
+                        <div className={`w-3 h-3 rounded-full ${
+                            exp.status === 'current' ? 'bg-pink-500' : 'bg-green-500'
+                        }`}>
+                          {exp.status === 'current' && (
+                              <div className="absolute inset-0 w-3 h-3 rounded-full bg-pink-500 opacity-75" style={{animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'}}></div>
+                          )}
+                        </div>
+                      </div>
 
                       {/* Content */}
                       <div
@@ -135,8 +141,11 @@ export function Experience() {
                               {exp.period}
                             </span>
                             {exp.status === 'current' && (
-                                <span className="text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded-full animate-pulse flex items-center gap-1">
-                                  <span className="w-1.5 h-1.5 bg-pink-400 rounded-full animate-ping"></span>
+                                <span className="relative text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded-full flex items-center gap-1">
+                                  <span className="relative flex h-1.5 w-1.5">
+                                    <span className="absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75" style={{animation: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite'}}></span>
+                                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-pink-400"></span>
+                                  </span>
                                   In Progress
                                 </span>
                             )}
@@ -231,9 +240,15 @@ export function Experience() {
                         }`}
                     >
                       {/* Timeline dot */}
-                      <div className={`hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-slate-800 ${
-                          edu.status === 'current' ? 'bg-pink-500 animate-pulse' : 'bg-green-500'
-                      }`} />
+                      <div className={`hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10 w-6 h-6 rounded-full bg-slate-800`}>
+                        <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full ${
+                            edu.status === 'current' ? 'bg-pink-500' : 'bg-green-500'
+                        }`}>
+                          {edu.status === 'current' && (
+                              <span className="absolute inset-0 w-3 h-3 rounded-full bg-pink-500 opacity-75" style={{animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'}}></span>
+                          )}
+                        </div>
+                      </div>
 
                       {/* Content */}
                       <div
@@ -244,8 +259,11 @@ export function Experience() {
                             <Calendar className="w-4 h-4" />
                             <span className="text-sm">{edu.period || 'Present'}</span>
                             {edu.status === 'current' && (
-                                <span className="text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded-full animate-pulse flex items-center gap-1">
-                                  <span className="w-1.5 h-1.5 bg-pink-400 rounded-full animate-ping"></span>
+                                <span className="relative text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded-full flex items-center gap-1">
+                                  <span className="relative flex h-1.5 w-1.5">
+                                    <span className="absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75" style={{animation: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite'}}></span>
+                                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-pink-400"></span>
+                                  </span>
                                   In Progress
                                 </span>
                             )}
