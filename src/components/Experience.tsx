@@ -100,7 +100,18 @@ export function Experience() {
 
             <div className="relative">
               {/* Timeline line */}
-              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700" />
+              <div
+                  className="hidden md:block absolute"
+                  style={{
+                    left: '50%',
+                    top: 0,
+                    bottom: 0,
+                    width: '2px',
+                    backgroundColor: '#334155',
+                    marginLeft: '-1px',
+                    zIndex: 1
+                  }}
+              />
 
               <div className="space-y-12">
                 {experiences.map((exp, index) => (
@@ -119,13 +130,45 @@ export function Experience() {
                                 : "md:flex-row-reverse"
                         }`}
                     >
-                      {/* Timeline dot */}
-                      <div className="hidden md:flex absolute left-1/2 top-0 transform -translate-x-1/2 items-center justify-center w-5 h-5 rounded-full bg-slate-900 border-4 border-slate-900 z-20">
-                        <div className={`w-3 h-3 rounded-full ${
-                            exp.status === 'current' ? 'bg-pink-500' : 'bg-green-500'
-                        }`}>
+                      {/* Timeline dot - Simple approach */}
+                      <div
+                          className="hidden md:block absolute left-1/2 top-6"
+                          style={{
+                            marginLeft: '-10px',
+                            width: '20px',
+                            height: '20px',
+                            backgroundColor: '#0f172a',
+                            borderRadius: '50%',
+                            border: '3px solid #0f172a',
+                            zIndex: 30,
+                          }}
+                      >
+                        <div
+                            style={{
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%, -50%)',
+                              width: '10px',
+                              height: '10px',
+                              backgroundColor: exp.status === 'current' ? '#ec4899' : '#22c55e',
+                              borderRadius: '50%',
+                            }}
+                        >
                           {exp.status === 'current' && (
-                              <div className="absolute inset-0 w-3 h-3 rounded-full bg-pink-500 opacity-75" style={{animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'}}></div>
+                              <div
+                                  style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '10px',
+                                    height: '10px',
+                                    backgroundColor: '#ec4899',
+                                    borderRadius: '50%',
+                                    opacity: 0.75,
+                                    animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                                  }}
+                              />
                           )}
                         </div>
                       </div>
@@ -220,7 +263,18 @@ export function Experience() {
 
             <div className="relative">
               {/* Timeline line */}
-              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700" />
+              <div
+                  className="hidden md:block absolute"
+                  style={{
+                    left: '50%',
+                    top: 0,
+                    bottom: 0,
+                    width: '2px',
+                    backgroundColor: '#334155',
+                    marginLeft: '-1px',
+                    zIndex: 1
+                  }}
+              />
 
               <div className="space-y-12">
                 {education.map((edu, index) => (
@@ -239,13 +293,45 @@ export function Experience() {
                                 : "md:flex-row-reverse"
                         }`}
                     >
-                      {/* Timeline dot */}
-                      <div className={`hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10 w-6 h-6 rounded-full bg-slate-800`}>
-                        <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full ${
-                            edu.status === 'current' ? 'bg-pink-500' : 'bg-green-500'
-                        }`}>
+                      {/* Timeline dot - Simple approach */}
+                      <div
+                          className="hidden md:block absolute left-1/2 top-6"
+                          style={{
+                            marginLeft: '-10px',
+                            width: '20px',
+                            height: '20px',
+                            backgroundColor: '#1e293b',
+                            borderRadius: '50%',
+                            border: '3px solid #1e293b',
+                            zIndex: 30,
+                          }}
+                      >
+                        <div
+                            style={{
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%, -50%)',
+                              width: '10px',
+                              height: '10px',
+                              backgroundColor: edu.status === 'current' ? '#ec4899' : '#22c55e',
+                              borderRadius: '50%',
+                            }}
+                        >
                           {edu.status === 'current' && (
-                              <span className="absolute inset-0 w-3 h-3 rounded-full bg-pink-500 opacity-75" style={{animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'}}></span>
+                              <div
+                                  style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '10px',
+                                    height: '10px',
+                                    backgroundColor: '#ec4899',
+                                    borderRadius: '50%',
+                                    opacity: 0.75,
+                                    animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                                  }}
+                              />
                           )}
                         </div>
                       </div>
