@@ -51,8 +51,14 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
               Experience
             </button>
             <button
-              onClick={() => scrollToSection('certifications')}
+              onClick={() => scrollToSection('education')}
               className="text-slate-300 hover:text-white transition-colors"
+            >
+              Education
+            </button>
+            <button
+                onClick={() => scrollToSection('certifications')}
+                className="text-slate-300 hover:text-white transition-colors"
             >
               Certifications
             </button>
@@ -102,8 +108,14 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
               Experience
             </button>
             <button
-              onClick={() => scrollToSection('certifications')}
+              onClick={() => scrollToSection('education')}
               className="block w-full text-left text-slate-300 hover:text-white transition-colors"
+            >
+              Education
+            </button>
+            <button
+                onClick={() => scrollToSection('certifications')}
+                className="block w-full text-left text-slate-300 hover:text-white transition-colors"
             >
               Certifications
             </button>

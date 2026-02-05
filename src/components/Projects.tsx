@@ -4,19 +4,17 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight, Maximize2 } from 'luci
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    title: 'Portfolio',
+    description: 'Full-featured personal portfolio website about Rethabile Mokwane',
+    technologies: ['React', 'Node.js', 'Figma', 'HTML', 'CSS'],
+    image: '/img.png',
+    demo: 'https://rethabile-website-portfolio.vercel.app/',
   },
   {
     title: 'Power Platform Automation Suite',
     description: 'Comprehensive automation solution using Power Automate and Power Apps for enterprise resource planning.',
     technologies: ['Power Apps', 'Power Automate', 'SharePoint', 'Dataverse'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    github: 'https://github.com',
     demo: 'https://demo.com',
   },
   {
@@ -24,7 +22,6 @@ const projects = [
     description: 'Interactive dashboard for visualizing real-time data with custom charts and filters.',
     technologies: ['React', 'TypeScript', 'Power BI', 'Azure', 'Chart.js'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-    github: 'https://github.com',
     demo: 'https://demo.com',
   },
   {
@@ -32,7 +29,6 @@ const projects = [
     description: 'Collaborative project management application with task tracking, team chat, and file sharing.',
     technologies: ['Next.js', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
-    github: 'https://github.com',
     demo: 'https://demo.com',
   },
   {
@@ -40,7 +36,6 @@ const projects = [
     description: 'Customer service chatbot using natural language processing and machine learning.',
     technologies: ['Python', 'TensorFlow', 'Flask', 'React', 'OpenAI API'],
     image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80',
-    github: 'https://github.com',
     demo: 'https://demo.com',
   },
   {
@@ -48,7 +43,6 @@ const projects = [
     description: 'Offline-capable PWA for field service management with geolocation and camera integration.',
     technologies: ['React', 'Service Workers', 'IndexedDB', 'Google Maps API'],
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80',
-    github: 'https://github.com',
     demo: 'https://demo.com',
   },
 ];
@@ -314,15 +308,6 @@ export function Projects() {
                   </div>
 
                   <div className="flex gap-4">
-                    <a
-                      href={projects[selectedProject].github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-700 text-white rounded-lg transition-colors border border-slate-700 hover:border-purple-500"
-                    >
-                      <Github className="w-5 h-5" />
-                      View Code
-                    </a>
                     <a
                       href={projects[selectedProject].demo}
                       target="_blank"

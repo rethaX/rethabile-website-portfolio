@@ -31,6 +31,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#education" className="text-slate-400 hover:text-purple-400 transition-colors">
+                  Education
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="text-slate-400 hover:text-purple-400 transition-colors">
                   Projects
                 </a>
