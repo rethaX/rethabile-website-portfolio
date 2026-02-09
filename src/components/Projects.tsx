@@ -8,14 +8,14 @@ const projects = [
     description: 'Full-featured personal portfolio website about Rethabile Mokwane',
     technologies: ['React', 'Node.js', 'Figma', 'HTML', 'CSS'],
     image: '/projects/portfolio.png',
-    demo: 'rethabile-mokwane-portfolio.vercel.app',
+    demo: 'https://rethabile-mokwane-portfolio.vercel.app',
   },
   {
     title: 'Multi-Widget Dashboard',
     description: 'UX Designed multi-widget dashboard for weather, news and movies',
     technologies: ['HTML', 'CSS', 'Javascript'],
     image: '/projects/dashboard.png',
-    demo: 'multi-widget-dashboard.vercel.app',
+    demo: 'https://multi-widget-dashboard.vercel.app/',
   },
   {
     title: 'Real-Time Analytics Dashboard',
