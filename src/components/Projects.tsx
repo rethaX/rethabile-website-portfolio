@@ -309,7 +309,7 @@ export function Projects() {
 
                   <div className="flex gap-4">
                     <a
-                      href={projects[selectedProject].demo}
+                      href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all"
